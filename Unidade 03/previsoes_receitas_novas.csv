@@ -1,0 +1,17 @@
+Receita,Categoria esperada,Representação,Categoria prevista,Confiança
+Exemplo — sopa de legumes,SOPAS,BoW,BEBIDAS,0.452
+Exemplo — sopa de legumes,SOPAS,TF-IDF,SOPAS,0.165
+Exemplo — sopa de legumes,SOPAS,Word2Vec,SOPAS,0.792
+Exemplo — sopa de legumes,SOPAS,BERT,SOPAS,0.731
+Exemplo — suco de laranja,BEBIDAS,BoW,BEBIDAS,0.836
+Exemplo — suco de laranja,BEBIDAS,TF-IDF,BEBIDAS,0.375
+Exemplo — suco de laranja,BEBIDAS,Word2Vec,BEBIDAS,0.75
+Exemplo — suco de laranja,BEBIDAS,BERT,BEBIDAS,0.972
+Exemplo — filé de peixe assado,PEIXES E FRUTOS DO MAR,BoW,BEBIDAS,0.345
+Exemplo — filé de peixe assado,PEIXES E FRUTOS DO MAR,TF-IDF,PEIXES E FRUTOS DO MAR,0.352
+Exemplo — filé de peixe assado,PEIXES E FRUTOS DO MAR,Word2Vec,PEIXES E FRUTOS DO MAR,0.859
+Exemplo — filé de peixe assado,PEIXES E FRUTOS DO MAR,BERT,PEIXES E FRUTOS DO MAR,0.942
+Exemplo — frango assado,AVES,BoW,BEBIDAS,0.424
+Exemplo — frango assado,AVES,TF-IDF,AVES,0.276
+Exemplo — frango assado,AVES,Word2Vec,AVES,0.887
+Exemplo — frango assado,AVES,BERT,SALADAS E MOLHOS,0.695

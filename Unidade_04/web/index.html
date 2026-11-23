@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Mostra Virtual de PLN da FURB. Experimente uma busca que cruza o seu pedido com 620 receitas da Unidade 3.">
+<meta name="theme-color" content="#f8f5eb">
+<title>Improvisa — Receitas com PLN</title>
+<link rel="stylesheet" href="./style.css">
+<script type="module" src="./app.mjs"></script>
+</head>
+<body>
+<a class="skip" href="#conteudo">Pular para o conteúdo</a>
+<header class="bar"><div class="wrap bar-in">
+<a class="brand" href="/"><span aria-hidden="true">✳</span> improvisa<span class="brand-dot">.</span></a>
+<nav aria-label="Seções do projeto"><a href="/metodo.html">Método</a><a href="/resultados.html">Resultados</a><a class="nav-cta" href="/#demo">Experimentar <span aria-hidden="true">↗</span></a></nav>
+</div></header>
+<main id="conteudo">
+<section class="hero wrap" id="inicio">
+<div class="intro">
+<p class="eyebrow eyebrow-olive"><span></span> MOSTRA VIRTUAL DE PLN <b>·</b> FURB 2026/2</p>
+<h1>Da despensa<br>ao <em>prato.</em></h1>
+<p class="slogan">Com o que tem, a gente improvisa.</p>
+<p class="lead">Conte quais ingredientes você tem em casa. O Improvisa sugere receitas que aproveitam esses ingredientes, considera restrições de preparo e mostra o link da receita original.</p>
+<a class="button" href="#demo">Testar o recomendador <span aria-hidden="true">↓</span></a>
+</div>
+<div class="figure" aria-hidden="true">
+<div class="figure-top"><span>CADERNO DE RECEITAS</span><span>FIG. 01</span></div>
+<svg viewBox="0 0 440 280" role="presentation">
+<defs><pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M20 0H0V20" fill="none" stroke="#83906d" stroke-opacity=".34" stroke-width="1"/></pattern></defs>
+<rect width="440" height="280" fill="url(#grid)"/>
+<g fill="none" stroke="#758253" stroke-width="1.1"><path d="M28 213h66l36-33m193-109 33-36h57M278 215l29 28h78" stroke-dasharray="4 4"/><circle cx="125" cy="182" r="3" fill="#758253"/><circle cx="327" cy="67" r="3" fill="#758253"/></g>
+<g transform="translate(221 137) rotate(-12)">
+<ellipse cx="4" cy="16" rx="126" ry="109" fill="#6c784c" opacity=".16"/>
+<ellipse rx="123" ry="106" fill="#fffcf0" stroke="#697649" stroke-width="2"/>
+<ellipse rx="108" ry="91" fill="#f7efce" stroke="#a2a373" stroke-width="1.5"/>
+<ellipse rx="93" ry="77" fill="#eeedce" stroke="#b3b381" stroke-width="1"/>
+<g fill="none" stroke="#6d8237" stroke-width="4" stroke-linecap="round"><path d="M-52 44Q-94 7-56-36m11 84Q-9 17-47-30M26 56Q73 30 71-16M16 53Q33 17 71 5M-7-45Q14-67 49-49"/></g>
+<g fill="#879b45"><path d="M-64 36q-33-4-24-31 25 3 24 31m10-17q7-25 27-24 3 26-27 24m-10-34q-27-8-18-28 21 6 18 28m81 59q-8-24 13-35 9 18-13 35m32-13q20-25 38-10-4 17-38 10m9-28q-10-20 8-29 16 17-8 29M12-53q1-24 21-22 8 14-21 22"/></g>
+<g fill="#cc5035" stroke="#992f28" stroke-width="1.7"><path d="M-48-16q11-26 32-17 25 10 19 34-7 18-27 15-29-3-24-32Z"/><path d="M2 14q14-20 33-10 23 10 14 31-7 18-27 16Q-6 46 2 14Z"/><path d="M35-35q15-17 34-3 15 13 4 30-11 17-30 6-20-10-8-33Z"/></g>
+<g fill="none" stroke="#ffc390" stroke-width="1.5" stroke-linecap="round"><path d="M-35-17q3-8 13-8M14 18q5-8 13-6M47-28q5-5 12-3"/></g>
+<g fill="#e6ad4e" stroke="#aa7430" stroke-width="1.4"><path d="M-14-22 8-32l16 15L8-2-13-6Z"/><path d="m-43 30 18-12 13 8-2 20-20 5Z"/><path d="m44 40 19-4 8 9-10 14-20-2Z"/></g>
+<g fill="#546d34"><circle cx="-23" cy="-54" r="3"/><circle cx="-65" cy="56" r="2"/><circle cx="22" cy="-44" r="2"/><circle cx="5" cy="60" r="3"/><circle cx="79" cy="11" r="2"/><circle cx="-38" cy="4" r="2"/></g>
+</g>
+<g fill="#435332" font-family="monospace" font-size="10" letter-spacing="1"><text x="28" y="229">INGREDIENTES</text><text x="354" y="29">RECEITA</text><text x="327" y="260">FONTE</text></g>
+</svg>
+<div class="figure-bottom"><span>01 / CORPUS DA UNIDADE 3</span><strong>620 receitas</strong></div>
+</div>
+</section>
+
+<section class="demo-band" id="demo"><div class="wrap demo">
+<div class="section-intro"><p class="eyebrow">01 / DEMONSTRAÇÃO</p><h2>O que tem na sua cozinha?</h2><p>Escreva um pedido curto com os ingredientes ou o nome do prato. Você também pode dizer que não tem algum utensílio, como forno, liquidificador ou panela de pressão, entre outros.</p></div>
+<div class="console">
+<div class="console-bar"><span class="console-icon" aria-hidden="true">✳</span><div><strong>Assistente de receitas</strong><small>Busca na base da Unidade 3</small></div><span class="status" id="mode-badge"><i></i> Busca guiada</span></div>
+<div class="console-body">
+<div id="history" aria-live="polite"><p class="bubble">Oi! Me diga o que você tem em casa e eu busco na nossa base. Dá para começar com um dos exemplos.</p></div>
+<div class="examples" aria-label="Consultas de exemplo">
+<button type="button" data-query="Tenho frango e batata, mas não tenho forno.">Frango e batata sem forno</button>
+<button type="button" data-query="Tenho frango, mas não tenho panela de pressão.">Frango sem panela de pressão</button>
+<button type="button" data-query="bolo fubá">Bolo de fubá</button>
+<button type="button" data-query="Risoto de carne">Risoto de carne</button>
+</div>
+<form id="search"><label for="query">Seu pedido</label><div class="inputrow"><input id="query" name="query" maxlength="180" required placeholder="Ex.: Tenho frango e batata, mas não tenho forno." autocomplete="off"><button class="button send" type="submit" disabled>Buscar <span aria-hidden="true">↗</span></button></div></form>
+<p class="hint">As receitas aparecem primeiro. Quando disponível, o Chatbot RAG gera explicações automaticamente com o Workers AI. Se a geração falhar, permanece a explicação da busca. Não inclua dados pessoais no pedido.</p>
+<p id="base-status" class="hint" role="status">Carregando a base de receitas…</p>
+</div>
+</div>
+</div></section>
+
+</main>
+<footer><div class="wrap footer"><div><a class="brand" href="/"><span aria-hidden="true">✳</span> improvisa<span class="brand-dot">.</span></a><p>Processamento de Linguagem Natural · FURB 2026/2</p></div><div><strong>Equipe</strong><p>Alana Cristina Andreazza · Beatriz Moresco Joaquim · Caio Abrão Manarim · Haiko Rüdiger · Letícia Fruet</p><strong>Fonte de dados</strong><p>TudoGostoso, corpus preparado na Unidade 3.</p></div></div></footer>
+</body>
+</html>
